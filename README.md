@@ -5,4 +5,5 @@ DUCKI
 * git init
 
 실행
-* ducki -c config.yml
+* ./ducki
+  * 만약에 설정파일을 specify 할거면 -c config.yaml 같은 식으로 

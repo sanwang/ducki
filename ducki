@@ -34,6 +34,10 @@ if (program.hashString) {
   process.exit(0);
 }
 
+if (!program.config ) {
+  program.config = "config.yaml";	
+}
+
 if (!program.config || !Fs.existsSync(program.config)) {
   program.help();
   process.exit(-1);
@@ -53,7 +57,7 @@ try {
 global.app = express();
 app.locals.Git = Git;
 app.locals.Components = Components;
-app.locals.appTitle = Config.get("application.title", "Jingo");
+app.locals.appTitle = Config.get("application.title", "Ducki");
 app.locals.port = Config.get("server.port", process.env.PORT || 6067);
 app.locals.hostname = Config.get("server.hostname", "localhost");
 app.locals.features = Config.get("features", {});
