@@ -1,0 +1,35 @@
+{
+  "name": "ducki",
+  "version": "0.0.1",
+  "description": "Wiki for Duck",
+  "author": {
+    "name": "Sanwang",
+    "email": "mynameisdj@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanwang/ducki"
+  },
+  "directories": {
+    "lib": "./lib/"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "jade": "*",
+    "passport": "*",
+    "passport-google": "*",
+    "passport-local": "*",
+    "iconv": "*",
+    "marked": ">= 0.2.x",
+    "node-syntaxhighlighter": "*",
+    "gravatar": ">= 1.0.6",
+    "express-validator": ">= 0.3.0",
+    "commander": "*",
+    "connect-flash": "*",
+    "yaml-js": "*"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
+}

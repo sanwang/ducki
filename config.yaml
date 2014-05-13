@@ -1,0 +1,29 @@
+---
+  # Configuration sample file for Jingo (YAML)
+  application:
+    title: "Jingo"
+    repository: "/Users/dante/git/jingo-test-rep" 
+    docSubdir: "wiki"
+    remote: ""
+    pushInterval: 30
+    secret: "change me"
+  features:
+    markitup: false
+    codemirror: true
+  server:
+    hostname: "localhost"
+    port: 6067
+    localOnly: false
+    baseUrl: "http://localhost:6067"
+  authorization:
+    anonRead: true
+    validMatches: ".+"
+  authentication:
+    google:
+      enabled: true
+    alone:
+      enabled: true
+      username: ""
+      passwordHash: ""
+      email: ""
+
