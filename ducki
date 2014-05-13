@@ -35,7 +35,7 @@ if (program.hashString) {
 }
 
 if (!program.config ) {
-  program.config = "config.yaml";	
+  program.config = "development_config.yaml";	
 }
 
 if (!program.config || !Fs.existsSync(program.config)) {
@@ -179,7 +179,6 @@ function requireAuthentication(req, res, next) {
 /* 
  * Passport configuration
  */
-
 passport.use(new GoogleStrategy({
     returnURL: app.locals.baseUrl + '/auth/google/return',
     realm: app.locals.baseUrl

@@ -1,0 +1,28 @@
+---
+  # Configuration sample file for Jingo (YAML)
+  application:
+    title: "Jingo"
+    repository: "/../wiki-data-repo" 
+    remote: ""
+    pushInterval: 30
+    secret: "change me"
+  features:
+    markitup: false
+    codemirror: true
+  server:
+    hostname: "localhost"
+    port: 6067
+    localOnly: false
+    baseUrl: "http://ec2-54-187-134-176.us-west-2.compute.amazonaws.com:6067"
+  authorization:
+    anonRead: true
+    validMatches: ".+"
+  authentication:
+    google:
+      enabled: true
+    alone:
+      enabled: true
+      username: ""
+      passwordHash: ""
+      email: ""
+
