@@ -25,4 +25,4 @@ build/Release
 node_modules
 
 # 실제 위키 내용 들어감.
-wiki-git-repo
+wiki-data-repo

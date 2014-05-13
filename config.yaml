@@ -2,8 +2,7 @@
   # Configuration sample file for Jingo (YAML)
   application:
     title: "Jingo"
-    repository: "/Users/dante/git/jingo-test-rep" 
-    docSubdir: "wiki"
+    repository: "/../wiki-data-repo" 
     remote: ""
     pushInterval: 30
     secret: "change me"
